@@ -9,10 +9,11 @@ import { ArrowUp } from "lucide-react"
 
 function AboutContent() {
   const searchParams = useSearchParams()
-  const activeTab = searchParams.get("tab") || "vision"
+  const activeTab = searchParams.get("tab") || "about us"
 
   const tabs = [
-    { id: "vision", label: "Vision" },
+    { id: "about us", label: "About us" },
+    { id: "how we work", label: "How we work" },
     { id: "history", label: "History" },
     { id: "contact", label: "Contact" },
   ]
@@ -28,13 +29,13 @@ function AboutContent() {
             items={[
               { label: "Home", href: "/" },
               { label: "About", href: "/about" },
-              { label: activeTab.charAt(0).toUpperCase() + activeTab.slice(1) },
+              { label: tabs.find(t => t.id === activeTab)?.label || "About us" },
             ]}
           />
 
           {/* Title */}
           <h1 className="text-2xl font-bold text-[#1a1a1a] mb-6">
-            {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}
+            {tabs.find(t => t.id === activeTab)?.label || "About us"}
           </h1>
 
           {/* Tabs */}

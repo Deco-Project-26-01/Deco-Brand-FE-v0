@@ -10,7 +10,7 @@ const navItems = [
     label: "About",
     href: "/about",
     submenu: [
-      { label: "Vision", href: "/about?tab=vision" },
+      { label: "How we work", href: "/about?tab=how we work" },
       { label: "History", href: "/about?tab=history" },
       { label: "Contact", href: "/about?tab=contact" },
     ],
