@@ -73,7 +73,7 @@ function AboutContent() {
                 </ul>
                 <hr className="my-6 border-[#cfcfcf]" />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Address: 215-8, Seonhwa-ro 63-gil, Iksan-si, Jeollabuk-do, Republic of Korea</li>
+                  <li>Address: 215-8, Seonhwa-ro 63-gil, Iksan-city, Jeollabuk-do, Republic of Korea</li>
                 </ul>
               </div>
             ) : activeTab === "about us" ? (
