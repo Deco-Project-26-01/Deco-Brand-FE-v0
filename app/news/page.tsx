@@ -12,7 +12,7 @@ const newsItems = [
   { id: 1, title: "Dubai Show 2026", image: "/images/conference.jpg" },
   { id: 2, title: "LasVegas Jewellery Show 2026", image: "/images/conference.jpg" },
   { id: 3, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
-  { id: 4, title: "JCK Show Las Vegas 2026 ", image: "/images/conference.jpg" },
+  { id: 4, title: "JCK Show Las Vegas 2026", image: "/images/conference.jpg" },
   { id: 5, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
   { id: 6, title: "This is News Title", image: "/images/conference.jpg" },
 ]
