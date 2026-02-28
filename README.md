@@ -6,11 +6,26 @@ Deco Brand 회사소개의 Front-end 레포지토리
 
 ## Brand
 🟦 About Us
-회사 소개 About us
+
+### 회사 소개 (수출국가 등)
+
+
+#### Nature of Business
+Exporter, Manufacturer
+
+#### Product / Service Range
+Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery
+
+#### Exhibit / Brand / Service Description
+18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.
+
+#### Main Markets 
+UAE,Hong Kong(China),India,Japan,USA 
+
 
 생산 경험 How we work
 
-수출 국가
+연혁 History
 
 품질 관리 방식
 
@@ -20,21 +35,11 @@ Deco Brand 회사소개의 Front-end 레포지토리
 문의 
 - 전화번호
 - 이메일
-Footer
+<br>
+
+**Footer**
 - whatsapp
 - instagram
-
-### Nature of Business
-Exporter, Manufacturer
-
-### Product / Service Range
-Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery
-
-### Exhibit / Brand / Service Description
-18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.
-
-### Main Markets 
-UAE,Hong Kong(China),India,Japan,USA 
 
 ### showcase
 https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase
