@@ -62,12 +62,12 @@ function AboutContent() {
                   Contact
                 </h2>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>E-mail: <a href="mailto:decoindco@naver.com" className="text-[#004127] underline">decoindco@naver.com</a></li>
-                  <li>E-mail: <a href="mailto:decoindco@naver.com" className="text-[#004127] underline">decoindco@gmail.com</a></li>
+                  <li>E-mail: <a href="mailto:decoindco@naver.com" className="text-[#004127] underline">stevekim97g@gmail.com</a></li>
+                  <li>E-mail: <a href="mailto:decoindco@naver.com" className="text-[#004127] underline">decoindco@kita.net</a></li>
                 </ul>
                 <hr className="my-6 border-[#cfcfcf]" />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Tel: +82-2-747-0908~9 (Sales)</li>
+                  <li>Tel: +82-2-747-0908(Sales)</li>
                   <li>Tel: +82-63-833-8435 (Factory)</li>
                   <li>Phone: +82-10-8022-4255</li>
                 </ul>

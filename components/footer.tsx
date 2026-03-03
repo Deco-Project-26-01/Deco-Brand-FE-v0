@@ -27,7 +27,7 @@ export default function Footer() {
             <p className="mt-1">COPYRIGHT &copy; Deco indco ltd All Rights Reserved.</p>
           </div>
           <div className="flex items-center gap-5">
-            <Link href="https://www.linkedin.com/in/sangho-k-36204b242/" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <Link href="https://www.linkedin.com/company/decoindco" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </Link>
