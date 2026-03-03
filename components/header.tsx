@@ -160,12 +160,14 @@ export default function Header() {
             )}
           </div>
 
-          <Link
-            href="#"
+          <a
+            href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#ffffff] text-[#004127] text-xs font-semibold px-4 py-2 rounded hover:bg-[#eef1f4] transition-colors"
           >
             Online Store
-          </Link>
+          </a>
         </div>
       </div>
     </header>
