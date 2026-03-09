@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useRef, useEffect } from "react"
 import { Search, ChevronDown } from "lucide-react"
 import { usePathname } from "next/navigation"
@@ -48,8 +49,14 @@ export default function Header() {
     <header className="bg-[#004127] text-[#ffffff] relative z-50" ref={menuRef}>
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 h-16">
         {/* Logo */}
-        <Link href="/" className="text-[#ffffff] font-bold text-xl tracking-widest">
-          DECO
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo_white.png"
+            alt="DECO"
+            width={80}
+            height={28}
+            priority
+          />
         </Link>
 
         {/* Navigation */}
