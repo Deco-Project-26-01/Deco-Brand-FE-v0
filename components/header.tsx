@@ -49,9 +49,7 @@ export default function Header() {
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 h-16">
         {/* Logo */}
         <Link href="/" className="text-[#ffffff] font-bold text-xl tracking-widest">
-          <Image>
 
-          </Image>
         </Link>
 
         {/* Navigation */}
