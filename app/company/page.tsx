@@ -6,6 +6,7 @@ import BreadcrumbNav from "@/components/breadcrumb-nav"
 import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
 import { ArrowUp } from "lucide-react"
+import Image from "next/image"
 
 function AboutContent() {
   const searchParams = useSearchParams()
@@ -95,26 +96,23 @@ function AboutContent() {
                   <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA</p>
                 </div>
               </div>
+            ) : activeTab === "history" ? (
+              <div className="w-full max-w-[900px] mx-auto">
+                <Image
+                  src="/images/deco_history.png"
+                  alt="DECO Industry History Timeline - 1986 to 2026"
+                  width={1400}
+                  height={780}
+                  className="w-full h-auto rounded"
+                  priority
+                />
+              </div>
             ) : (
               <>
-                {/* Placeholder image */}
+                {/* Placeholder content for other tabs */}
                 <div className="w-full max-w-[480px] mx-auto mb-8">
                   <div className="w-full h-4 bg-[#4f4f4f] rounded-full mb-2" />
                   <div className="w-[60%] h-4 bg-[#7d7d7d] rounded-full" />
-                </div>
-
-                {/* Headline */}
-                <h2 className="text-xl font-semibold text-[#1a1a1a] text-center mb-6">
-                  Headline goes here
-                </h2>
-
-                {/* Description placeholder */}
-                <div className="max-w-[480px] mx-auto space-y-2 mb-8">
-                  <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-                  <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-                  <div className="h-2.5 bg-[#cfcfcf] rounded-full w-[90%]" />
-                  <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
-                  <div className="h-2.5 bg-[#eef1f4] rounded-full w-[70%]" />
                 </div>
               </>
             )}
