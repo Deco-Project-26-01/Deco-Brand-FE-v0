@@ -27,7 +27,7 @@ const navItems = [
     ],
   },
   { label: "News", href: "/news" },
-  { label: "IR", href: "/ir" },
+  { label: "Exhibition", href: "/exhibition" },
 ]
 
 export default function Header() {
