@@ -3,7 +3,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useRef, useEffect } from "react"
-import { Search, ChevronDown } from "lucide-react"
 import { usePathname } from "next/navigation"
 
 const navItems = [
@@ -83,16 +82,13 @@ export default function Header() {
                   ) : (
                     item.label
                   )}
-                  {item.submenu && (
-                    <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${openMenu === item.label ? "rotate-180" : ""}`} />
-                  )}
                 </button>
               </div>
             )
           })}
         </nav>
 
-        {/* Full-width mega dropdown */}
+        {/* Full-width mega dropdown - 드롭다운 메뉴 전체 영역 */}
         {navItems.map((item) =>
           item.submenu && openMenu === item.label ? (
             <div
@@ -100,6 +96,7 @@ export default function Header() {
               className="absolute top-full left-0 w-full bg-[#ffffff] text-[#1a1a1a] shadow-xl border-t border-[#eef1f4] z-50"
               onMouseLeave={() => setOpenMenu(null)}
             >
+              {/* 드롭다운 메뉴 내부 영역 */}
               <div className="max-w-[1280px] mx-auto px-6 py-8">
                 <div className="flex gap-16">
                   {/* Left: Section title */}
@@ -140,12 +137,8 @@ export default function Header() {
 
         {/* Right side */}
         <div className="flex items-center gap-4">
-          <button className="text-[#ffffff] hover:text-[#f1bc69] transition-colors cursor-pointer" aria-label="Search">
-            <Search className="w-4 h-4" />
-          </button>
-
           {/* Language indicator */}
-          <span className="text-sm text-[#ffffff]">
+          <span className="text-sm text-[#ffffff] invisible">
             EN
           </span>
 
