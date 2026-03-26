@@ -36,12 +36,6 @@ export default function HomePage() {
             </div>
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. — Custom Jewellery Manufacturer in South Korea</h2>
-              <div className="space-y-2">
-                <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-                <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-                <div className="h-2.5 bg-[#cfcfcf] rounded-full w-[90%]" />
-                <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
-              </div>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 Since 1986, we export to 20+ countries like Dubai, Hong Kong, India,Japan ,USA
               </Link>
@@ -59,12 +53,6 @@ export default function HomePage() {
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
                 earrings" for diamonds color stones. </h2>
-              <div className="space-y-2">
-                <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-                <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-                <div className="h-2.5 bg-[#cfcfcf] rounded-full w-[90%]" />
-                <div className="h-2.5 bg-[#eef1f4] rounded-full w-[70%]" />
-              </div>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 OEM & ODM • 20+ countries
               </Link>
