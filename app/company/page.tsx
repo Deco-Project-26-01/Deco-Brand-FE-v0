@@ -116,7 +116,7 @@ function AboutContent() {
                 <section className="mb-8">
 
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Deco Ind Co Ltd is a Korean jewelry brand based in the South Korea. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
+                    Deco Ind Co Ltd is a Korean jewelry brand based in South Korea. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     Every piece is personally selected, inspected and completed with a strong focus on quality, origin and craftsmanship. We take personal responsibility for each item we offer.
