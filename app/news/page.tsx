@@ -19,10 +19,8 @@ const newsItems = [
 
 const noticeItems = [
   { id: 3, title: "2026 March Hong Kong International Jewelry Show", date: "2026.03.04", details: "Details for 2026 March Hong Kong International Jewelry Show will be displayed here." },
-  { id: 2, title: "Company Website Renewal", date: "2025.04.03", details: "Details for Company Website Renewal will be displayed here." },
-  {
-    id: 1, title: "Deco 공식 홈페이지 OPEN!", date: "2026.03.30", badge: "Deco", details: "* Seoul Office hour AM 10:00 ~ PM 17:00 (Closed on weekends and Korean public holidays)
-" },
+  { id: 2, title: "Company Website Renewal", date: "2025.04.03", details: "Details for Company Website Renewal will be displayed here." }, { id: 1, title: "Deco 공식 홈페이지 OPEN!", date: "2026.03.30", badge: "Deco", details: "* Seoul Office hour AM 10:00 ~ PM 17:00 (Closed on weekends and Korean public holidays" }
+
 ]
 
 function NewsContent() {
