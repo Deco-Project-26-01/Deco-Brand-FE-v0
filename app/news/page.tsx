@@ -14,13 +14,15 @@ const newsItems = [
   { id: 3, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
   { id: 4, title: "JCK Show Las Vegas 2026", image: "/images/conference.jpg" },
   { id: 5, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
-  { id: 6, title: "$30 millioni Export Tower, 2022", image: "/images/conference.jpg" },
+  { id: 6, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
 ]
 
 const noticeItems = [
   { id: 3, title: "2026 March Hong Kong International Jewelry Show", date: "2026.03.04", details: "Details for 2026 March Hong Kong International Jewelry Show will be displayed here." },
   { id: 2, title: "Company Website Renewal", date: "2025.04.03", details: "Details for Company Website Renewal will be displayed here." },
-  { id: 1, title: "Deco 공식 홈페이지 OPEN!", date: "2026.03.30", badge: "Deco", details: "Details for Deco 공식 홈페이지 OPEN! will be displayed here." },
+  {
+    id: 1, title: "Deco 공식 홈페이지 OPEN!", date: "2026.03.30", badge: "Deco", details: "* Seoul Office hour AM 10:00 ~ PM 17:00 (Closed on weekends and Korean public holidays)
+" },
 ]
 
 function NewsContent() {

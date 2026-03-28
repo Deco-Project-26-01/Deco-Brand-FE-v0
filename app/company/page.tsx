@@ -106,6 +106,102 @@ function AboutContent() {
                   priority
                 />
               </div>
+            ) : activeTab === "how we work" ? (
+              <div className="max-w-[800px] mx-auto">
+                {/* Title */}
+                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">We are Deco Ind Co Ltd</h2>
+                <hr className="border-[#cfcfcf] mb-8" />
+
+                {/* About Deco Ind Co Ltd */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">About Deco Ind Co Ltd</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
+                    Deco Ind Co Ltd is a Korean jewelry brand based in the South Korea. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
+                  </p>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
+                    Every piece is personally selected, inspected and completed with a strong focus on quality, origin and craftsmanship. We take personal responsibility for each item we offer.
+                  </p>
+                </section>
+
+                {/* Expertise and experience */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Expertise and experience</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
+                    For nearly four decades, we have focused exclusively on fine gold jewelry manufacturing. Thanks to this long-term specialization, we have deep expertise in gold mounting quality, precision, and craftsmanship.
+                  </p>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
+                    You can purchase our jewelry through our international partners or contact us directly for business inquiries. If you can&apos;t find a specific piece in the current selection, we will be happy to arrange a <a href="/company?tab=contact" className="text-[#004127] hover:underline">custom order or an individual adjustment</a>.
+                  </p>
+                </section>
+
+                {/* How our jewelry is created */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">How our jewelry is created</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
+                    We work exclusively with high-quality gold materials, including <a href="/products" className="text-[#004127] hover:underline">10k gold</a>, <a href="/products" className="text-[#004127] hover:underline">14k gold</a>, and <a href="/products" className="text-[#004127] hover:underline">18k gold</a>. All materials are carefully selected and sourced from trusted suppliers.
+                  </p>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
+                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners for distribution.
+                  </p>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
+                    We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.
+                  </p>
+                </section>
+
+                {/* Certificate of authenticity */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Certificate of authenticity</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
+                    Each jewelry piece comes with a <a href="/company?tab=contact" className="text-[#004127] hover:underline">certificate of authenticity</a>, confirming the gold purity and the materials used.
+                  </p>
+                </section>
+
+                {/* Our selection */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Our selection</h3>
+                  <ul className="space-y-1">
+                    <li><a href="/products" className="text-[#004127] hover:underline text-sm">Tennis bracelets</a></li>
+                    <li><a href="/products" className="text-[#004127] hover:underline text-sm">Tennis necklaces</a></li>
+                    <li><a href="/products" className="text-[#004127] hover:underline text-sm">Tennis earrings</a></li>
+                    <li><a href="/products" className="text-[#004127] hover:underline text-sm">Diamond mountings</a></li>
+                    <li><a href="/products" className="text-[#004127] hover:underline text-sm">Color stone mountings</a></li>
+                    <li className="text-sm text-[#1a1a1a]">Custom jewelry designs</li>
+                  </ul>
+                </section>
+
+                {/* Personal approach */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Personal approach</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
+                    Every customer matters to us. We&apos;ll gladly help you choose and take your preferences into account - whether you&apos;re looking for a specific design, a custom mounting, or an exceptional piece that isn&apos;t usually in stock.
+                  </p>
+                </section>
+
+                {/* Trust and responsibility */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Trust and responsibility</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
+                    Our work follows <a href="/company?tab=about us" className="text-[#004127] hover:underline">ethical principles</a>. Deco Ind Co Ltd is led by owner Kim Eung Yeol, who is personally responsible for the quality, origin and presentation of all jewelry.
+                  </p>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
+                    For business enquiries or specific requests, you can reach the owner via the <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> page.
+                  </p>
+                </section>
+
+                {/* Where to find us */}
+                <section className="mb-8">
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
+                    You can contact us at <span className="font-semibold">stevekim97g@gmail.com</span>. We deliver quickly and securely via trusted carriers worldwide.
+                  </p>
+                  <div className="text-sm text-[#1a1a1a] leading-relaxed">
+                    <p className="font-semibold">Deco Ind Co Ltd</p>
+                    <p>215-8, Seonhwa-ro 63-gil</p>
+                    <p>Iksan-city, Jeollabuk-do</p>
+                    <p>Republic of Korea</p>
+                  </div>
+                </section>
+              </div>
             ) : (
               <>
                 {/* Placeholder content for other tabs */}
