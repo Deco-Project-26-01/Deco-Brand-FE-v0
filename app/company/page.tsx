@@ -181,7 +181,7 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Trust and responsibility</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our work follows <a href="/company?tab=about us" className="text-[#004127] hover:underline">ethical principles</a>. Deco Ind Co Ltd is led by owner Kim Eung Yeol, who is personally responsible for the quality, origin and presentation of all jewelry.
+                    Our work follows <a href="/company?tab=about us" className="text-[#004127] hover:underline">ethical principles</a>. Deco Ind Co Ltd is founded by owner Kim Eung Yeol, who is origin and presentation of Deco indco Ltd jewelry.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
                     For business enquiries or specific requests, you can reach the owner via the <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> page.
@@ -192,7 +192,7 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us at <span className="font-semibold">stevekim97g@gmail.com</span>. We deliver quickly and securely via trusted carriers worldwide.
+                    You can contact us by mail and htkdc website. We deliver quickly and securely via trusted carriers worldwide.
                   </p>
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
                     <p className="font-semibold">Deco Ind Co Ltd</p>
