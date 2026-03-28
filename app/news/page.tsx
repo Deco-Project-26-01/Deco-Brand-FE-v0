@@ -86,7 +86,7 @@ function NewsContent() {
                 <div className="relative">
                   <input
                     type="text"
-                    placeholder="검색어를 입력하세요"
+                    placeholder="Search"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-[220px] border border-[#cfcfcf] rounded px-3 py-2 text-sm text-[#1a1a1a] pr-9 focus:outline-none focus:border-[#004127]"
