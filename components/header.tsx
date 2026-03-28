@@ -138,7 +138,7 @@ export default function Header() {
           </span>
 
           <a
-            href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase"
+            href="https://deco-store-fe-production.up.railway.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#ffffff] text-[#004127] text-xs font-semibold px-4 py-2 rounded hover:bg-[#eef1f4] transition-colors"

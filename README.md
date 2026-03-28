@@ -7,7 +7,7 @@ Deco Brand 회사소개의 Front-end 레포지토리
 ## Brand
 🟦 About Us
 
-### 회사 소개 (수출국가 등)
+### 회사 소개
 
 
 #### Nature of Business
@@ -23,7 +23,7 @@ Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery
 UAE,Hong Kong(China),India,Japan,USA 
 
 
-생산 경험 How we work
+생산 및 주문방식 How we work
 
 연혁 History
 
