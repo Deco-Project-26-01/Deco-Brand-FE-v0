@@ -9,18 +9,19 @@ import { Suspense, useState } from "react"
 import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 
 const newsItems = [
-  { id: 1, title: "Dubai Show 2026", image: "/images/conference.jpg" },
-  { id: 2, title: "LasVegas Jewellery Show 2026", image: "/images/conference.jpg" },
-  { id: 3, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
-  { id: 4, title: "JCK Show Las Vegas 2026", image: "/images/conference.jpg" },
-  { id: 5, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
-  { id: 6, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 1, title: "$5 million Export Tower , 2004", image: "/images/5mtop.jpg" },
+  { id: 2, title: "$10 million Export Tower ,2010", image: "/images/1ktop.jpg" },
+  { id: 3, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 4, title: "Dubai Show 2026", image: "/images/conference.jpg" },
+  { id: 5, title: "LasVegas Jewellery Show 2026", image: "/images/conference.jpg" },
+  { id: 6, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
+
 ]
 
 const noticeItems = [
   { id: 3, title: "2026 March Hong Kong International Jewelry Show", date: "2026.03.04", details: "Details for 2026 March Hong Kong International Jewelry Show will be displayed here." },
   { id: 2, title: "Company Website Renewal", date: "2025.04.03", details: "Details for Company Website Renewal will be displayed here." },
-  { id: 1, title: "Deco 공식 홈페이지 OPEN!", date: "2026.03.30", badge: "Deco", details: "* Seoul Office hour AM 10:00 ~ PM 17:00 (Closed on weekends and Korean public holidays" }
+  { id: 1, title: "Deco 공식 홈페이지 OPEN!", date: "2026.03.30", details: "* Seoul Office hour (Closed on weekends and Korean public holidays" }
 ]
 
 function NewsContent() {
@@ -28,6 +29,15 @@ function NewsContent() {
   const activeTab = searchParams.get("tab") || "news"
   const [openItem, setOpenItem] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 3
+  const totalPages = 2
+
+  // Paginated news items
+  const paginatedNews = newsItems.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  )
 
   const tabs = [
     { id: "news", label: "News" },
@@ -156,11 +166,11 @@ function NewsContent() {
             </>
           ) : (
             <>
-              {/* News Grid */}
+              {/* News Grid - 3 items per row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
-                {newsItems.map((item) => (
+                {paginatedNews.map((item) => (
                   <article key={item.id} className="group cursor-pointer">
-                    <div className="relative w-full h-[180px] overflow-hidden mb-3">
+                    <div className="relative w-full h-[450px] overflow-hidden mb-3">
                       <Image
                         src={item.image}
                         alt={item.title}
@@ -176,19 +186,31 @@ function NewsContent() {
                 ))}
               </div>
 
-              {/* Pagination for News */}
+              {/* Pagination for News - 2 pages only */}
               <div className="flex items-center justify-center gap-2 pb-12">
-                <button className="w-8 h-8 flex items-center justify-center text-sm font-medium bg-[#004127] text-[#ffffff] rounded cursor-pointer">
+                <button
+                  onClick={() => setCurrentPage(1)}
+                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${currentPage === 1
+                    ? "bg-[#004127] text-[#ffffff]"
+                    : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                    }`}
+                >
                   1
                 </button>
-                <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
+                <button
+                  onClick={() => setCurrentPage(2)}
+                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${currentPage === 2
+                    ? "bg-[#004127] text-[#ffffff]"
+                    : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                    }`}
+                >
                   2
                 </button>
-                <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
-                  3
-                </button>
-                <button className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
-                  <ChevronRight className="w-4 h-4" />
+                <button
+                  onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
+                  className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:bg-[#004127] hover:text-[#ffffff] active:bg-[#004127] active:text-[#ffffff] rounded transition-colors cursor-pointer"
+                >
+                  <ChevronRight className="w-5 h-5" strokeWidth={3} />
                 </button>
               </div>
             </>

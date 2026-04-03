@@ -38,13 +38,13 @@ export default function Footer() {
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </Link>
-            <Link href="#" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <Link href="https://decoindco.tradekorea.com/main.do" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Instagram className="w-4 h-4" />
-              <span>Instagram</span>
+              <span>TradeKorea</span>
             </Link>
-            <Link href="https://www.youtube.com/@elliotA7yt" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <Link href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Youtube className="w-4 h-4" />
-              <span>YouTube</span>
+              <span>HKTDC</span>
             </Link>
           </div>
         </div>
