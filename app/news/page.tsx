@@ -28,6 +28,15 @@ function NewsContent() {
   const activeTab = searchParams.get("tab") || "news"
   const [openItem, setOpenItem] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 3
+  const totalPages = 2
+
+  // Paginated news items
+  const paginatedNews = newsItems.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  )
 
   const tabs = [
     { id: "news", label: "News" },
@@ -156,16 +165,16 @@ function NewsContent() {
             </>
           ) : (
             <>
-              {/* News Grid */}
+              {/* News Grid - 3 items per row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
-                {newsItems.map((item) => (
+                {paginatedNews.map((item) => (
                   <article key={item.id} className="group cursor-pointer">
-                    <div className="relative w-full h-[180px] overflow-hidden mb-3">
+                    <div className="relative w-full h-[180px] overflow-hidden mb-3 bg-[#f5f5f5]">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        className={`${item.image.includes('export_tower') ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
                         {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
                       />
                     </div>
@@ -176,19 +185,33 @@ function NewsContent() {
                 ))}
               </div>
 
-              {/* Pagination for News */}
+              {/* Pagination for News - 2 pages only */}
               <div className="flex items-center justify-center gap-2 pb-12">
-                <button className="w-8 h-8 flex items-center justify-center text-sm font-medium bg-[#004127] text-[#ffffff] rounded cursor-pointer">
+                <button 
+                  onClick={() => setCurrentPage(1)}
+                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${
+                    currentPage === 1 
+                      ? "bg-[#004127] text-[#ffffff]" 
+                      : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                  }`}
+                >
                   1
                 </button>
-                <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
+                <button 
+                  onClick={() => setCurrentPage(2)}
+                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${
+                    currentPage === 2 
+                      ? "bg-[#004127] text-[#ffffff]" 
+                      : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                  }`}
+                >
                   2
                 </button>
-                <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
-                  3
-                </button>
-                <button className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
-                  <ChevronRight className="w-4 h-4" />
+                <button 
+                  onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
+                  className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:bg-[#004127] hover:text-[#ffffff] active:bg-[#004127] active:text-[#ffffff] rounded transition-colors cursor-pointer"
+                >
+                  <ChevronRight className="w-5 h-5" strokeWidth={3} />
                 </button>
               </div>
             </>
