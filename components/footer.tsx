@@ -34,18 +34,18 @@ export default function Footer() {
             <p className="mt-1">COPYRIGHT &copy; Deco Indco Ltd All Rights Reserved.</p>
           </div>
           <div className="flex items-center gap-5">
-            <Link href="https://www.linkedin.com/company/decoindco" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <a href="https://www.linkedin.com/company/decoindco" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
-            </Link>
-            <Link href="https://decoindco.tradekorea.com/main.do" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            </a>
+            <a href="https://decoindco.tradekorea.com/main.do" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Instagram className="w-4 h-4" />
               <span>TradeKorea</span>
-            </Link>
-            <Link href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            </a>
+            <a href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Youtube className="w-4 h-4" />
               <span>HKTDC</span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
