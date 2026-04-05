@@ -10,7 +10,9 @@ import Image from "next/image"
 
 function AboutContent() {
   const searchParams = useSearchParams()
-  const activeTab = searchParams.get("tab") || "about us"
+  // Normalize tab parameter: convert hyphens to spaces for matching
+  const rawTab = searchParams.get("tab") || "about us"
+  const activeTab = rawTab.replace(/-/g, " ")
 
   const tabs = [
     { id: "about us", label: "About us" },
