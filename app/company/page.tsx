@@ -116,7 +116,7 @@ function AboutContent() {
                 <section className="mb-8">
 
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Deco Ind Co Ltd is a Korean jewelry brand based in South Korea. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
+                    Deco Ind Co Ltd is a B2B jewelry brand based in South Korea. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     Every piece is personally selected, inspected and completed with a strong focus on quality, origin and craftsmanship. We take personal responsibility for each item we offer.
@@ -130,7 +130,7 @@ function AboutContent() {
                     For four decades, we have focused exclusively on fine gold jewelry manufacturing. Thanks to this long-term specialization, we have deep expertise in gold mounting quality, precision, and craftsmanship.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    You can purchase our jewelry by contacting us directly for business inquiries. If you can&apos;t find a specific piece in the current selection, we will be happy to arrange a <a href="/company?tab=contact" className="text-[#004127] hover:underline"> custom order by email or WhatsApp or an individual adjustment</a>.
+                    You can purchase our jewelry by contacting us directly for business inquiries. If you can&apos;t find a specific piece in the current selection, we will be happy to arrange a <a href="/company?tab=contact" className="text-[#004127] hover:underline"> custom order by email or WhatsApp or an individual adjustment. </a>.
                   </p>
                 </section>
 
@@ -163,7 +163,6 @@ function AboutContent() {
                     <li><a href="/brand?category=bracelets" className="text-[#004127] hover:underline text-sm">Tennis bracelets</a></li>
                     <li><a href="/brand?category=necklace" className="text-[#004127] hover:underline text-sm">Tennis necklaces</a></li>
                     <li><a href="/brand?category=earrings" className="text-[#004127] hover:underline text-sm">Tennis earrings</a></li>
-                    <li><a href="/products" className="text-[#004127] hover:underline text-sm">Diamond mountings</a></li>
 
                     <li className="text-sm text-[#1a1a1a]">Custom jewelry designs</li>
                   </ul>
@@ -181,10 +180,10 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Trust and responsibility</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our work follows <a href="/company?tab=about us" className="text-[#004127] hover:underline">ethical principles</a>. Deco Ind Co Ltd is founded by owner Kim Eung Yeol, who is origin and presentation of Deco indco Ltd jewelry.
+                    Our work follows ethical principles. Deco Ind Co Ltd is founded by owner MR. Kim Eung Yeol, who is origin and presentation of Deco indco Ltd jewelry.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    For business enquiries or specific requests, you can reach the owner via the <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> page.
+                    For business enquiries or specific requests, you can reach the owner via the email decoindco@gmail.com<a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> .
                   </p>
                 </section>
 
@@ -192,10 +191,10 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us by mail and htkdc website. We deliver quickly and securely via trusted carriers worldwide.
+                    You can contact us by mail and whatsapp below. We deliver quickly and securely via trusted carriers , FEDEX and DHL worldwide.
                   </p>
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
-                    <p className="font-semibold">Deco Ind Co Ltd</p>
+                    <p className="font-semibold">Deco Ind Co Ltd Factory</p>
                     <p>215-8, Seonhwa-ro 63-gil</p>
                     <p>Iksan-city, Jeollabuk-do</p>
                     <p>Republic of Korea</p>
