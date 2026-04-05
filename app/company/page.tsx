@@ -183,7 +183,7 @@ function AboutContent() {
                     Our work follows ethical principles. Deco Ind Co Ltd is founded by owner MR. Kim Eung Yeol, who is origin and presentation of Deco indco Ltd jewelry.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    For business enquiries or specific requests, you can reach the owner via the email decoindco@gmail.com<a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> .
+                    For business enquiries or specific requests, you can reach the owner via the email decoindco@naver.com<a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> .
                   </p>
                 </section>
 
