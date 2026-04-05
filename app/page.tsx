@@ -14,6 +14,7 @@ export default function HomePage() {
           <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
             <Image
               src="/images/HKDTC2026.jpg"
+              alt="HKTDC Hong Kong International Jewellery Show 2026"
               fill
               className="object-cover"
               priority
