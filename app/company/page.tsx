@@ -94,7 +94,7 @@ function AboutContent() {
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
-                  <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA</p>
+                  <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand ...</p>
                 </div>
               </div>
             ) : activeTab === "history" ? (
@@ -111,14 +111,14 @@ function AboutContent() {
             ) : activeTab === "how we work" ? (
               <div className="max-w-[800px] mx-auto">
                 {/* Title */}
-                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">We are Deco Ind Co Ltd</h2>
+                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">Deco Ind Co Ltd</h2>
                 <hr className="border-[#cfcfcf] mb-8" />
 
                 {/* About Deco Ind Co Ltd */}
                 <section className="mb-8">
 
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Deco Ind Co Ltd is a B2B jewelry brand based in South Korea. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
+                    Deco Ind Co Ltd is a B2B jewelry brand based in South Korea since in 1986. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     Every piece is personally selected, inspected and completed with a strong focus on quality, origin and craftsmanship. We take personal responsibility for each item we offer.
