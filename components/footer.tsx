@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-[#1a1a1a] text-[#ffffff]">
       <div className="max-w-[1280px] mx-auto px-6 py-8">
         {/* Top row */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
+        <div className="flex flex-row items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center">
               <Image
