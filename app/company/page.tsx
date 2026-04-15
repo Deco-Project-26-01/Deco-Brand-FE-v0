@@ -77,7 +77,7 @@ function AboutContent() {
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>Address: 215-8, Seonhwa-ro 63-gil, Iksan-city, Jeollabuk-do, Republic of Korea</li>
                 </ul>
-                
+
                 {/* Google Map */}
                 <div className="mt-8 w-full">
                   <iframe
@@ -126,7 +126,7 @@ function AboutContent() {
             ) : activeTab === "how we work" ? (
               <div className="max-w-[800px] mx-auto">
                 {/* Title */}
-                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">Deco Ind Co Ltd</h2>
+                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">(주) 데코산업 Deco Ind Co Ltd</h2>
                 <hr className="border-[#cfcfcf] mb-8" />
 
                 {/* About Deco Ind Co Ltd */}
@@ -167,7 +167,7 @@ function AboutContent() {
 
                 {/* Certificate of authenticity */}
                 <section className="mb-8">
-                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Certificate of authenticity</h3>
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Certificate</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
                     Each jewelry piece comes with a certificate of authenticity, confirming the gold purity and the materials used.
                   </p>
