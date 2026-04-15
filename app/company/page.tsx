@@ -213,7 +213,7 @@ function AboutContent() {
 
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Factory</h3>
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
-                    <p className="font-semibold">Deco Ind Co Ltd Factory</p>
+                    <p className="font-semibold">Factory Location</p>
                     <p>215-8, Seonhwa-ro 63-gil</p>
                     <p>Iksan-city, Jeollabuk-do</p>
                     <p>Republic of Korea</p>
