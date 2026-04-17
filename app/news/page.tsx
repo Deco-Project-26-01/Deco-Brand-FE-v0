@@ -9,11 +9,11 @@ import { Suspense, useState } from "react"
 import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 
 const newsItems = [
-  { id: 1, title: "$5 million Export Tower , 2004", image: "/images/5mtop.jpg" },
-  { id: 2, title: "$10 million Export Tower ,2010", image: "/images/1ktop.jpg" },
-  { id: 3, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
-  { id: 4, title: "Dubai Show 2026 Feb. ", image: "/images/conference.jpg" },
-  { id: 5, title: "Hongkong Jewellery Show 2026 March", image: "/images/conference.jpg" },
+  { id: 1, title: "5 million$ Export Tower , 2004", image: "/images/5mtop.jpg" },
+  { id: 2, title: "10 million$ Export Tower ,2010", image: "/images/1ktop.jpg" },
+  { id: 3, title: "30 million$ Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 4, title: "Dubai Show 2026 Feb. ", image: "/images/dubai.jpeg" },
+  { id: 5, title: "Hongkong Jewellery Show 2026 March", image: "/images/hktdc.png" },
   { id: 6, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/jewellery-gem-expo.png" },
 
 ]
@@ -24,7 +24,7 @@ const noticeItems = [
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
   { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* made by Jung Jinwook ,SanghoKim (Satoshi Kim) Leesangwoo, Seoul Office hour (Closed on weekends and Korean public holidays" },
-  { id: 3, title: "Company Website Renewal", date: "2025.04.13", details: "B2B CATALOG STORE OPEN 예정 by Kim sangho" },
+  { id: 3, title: "Company Website Renewal", date: "2025.04.20", details: "B2B CATALOG, STORE OPEN 예정 " },
 
 ]
 
