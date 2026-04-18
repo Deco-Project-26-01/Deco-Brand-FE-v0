@@ -26,7 +26,7 @@ const noticeItems = [
   { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* made by Jung Jinwook ,SanghoKim (Satoshi Kim) Leesangwoo, Seoul Office hour (Closed on weekends and Korean public holidays" },
   { id: 3, title: "Company Website Renewal", date: "2025.04.20", details: "B2B CATALOG, STORE OPEN 예정 " },
   {
-    id: 4, title: "2026 May JCK Las Vegas Jewelry Show  ", date: "2026.05.30", details:
+    id: 4, title: "2026 May JCK Las Vegas Jewelry Show  ", date: "2026.05.29", details:
       "https://lasvegas.jckonline.com/en-us/about/exhibitor-directory/exhibitor-details.deco%20ind%20co%20ltd.org-0ee9678f-36bb-4160-94d9-89a8cf5b8015.html#/"
   },
 
