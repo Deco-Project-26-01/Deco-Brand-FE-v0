@@ -35,7 +35,7 @@ export default function ExhibitionPage() {
         <div className="max-w-[960px] mx-auto px-6 py-12">
           {/* Title */}
           <h1 className="text-3xl font-bold text-[#1a1a1a] text-center mb-10">
-            EXHIBITION
+            Upcoming Events
           </h1>
 
           {/* Total count + Search */}
