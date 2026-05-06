@@ -23,8 +23,8 @@ const noticeItems = [
     id: 1, title: "2026 March Hong Kong International Jewelry ShowCase", date: "2026.03.04", details:
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
-  { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* made by Jung Jinwook ,SanghoKim (Satoshi Kim) Leesangwoo, Seoul Office hour (Closed on weekends and Korean public holidays" },
-  { id: 3, title: "Company Website Renewal", date: "2025.04.20", details: "B2B CATALOG, STORE OPEN 예정 " },
+  { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* made by Jung Jinwook ,SanghoKim & Leesangwoo, Seoul Office hour (Closed on weekends and Korean public holidays" },
+  { id: 3, title: "Company Website Renewal", date: "2025.04.20", details: "B2B CATALOG STORE OPEN 예정 " },
 
 ]
 
@@ -34,8 +34,8 @@ function NewsContent() {
   const [openItem, setOpenItem] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 3
-  const totalPages = 2
+  const itemsPerPage = 6
+  const totalPages = 5
 
   // Paginated news items
   const paginatedNews = newsItems.slice(

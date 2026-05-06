@@ -13,7 +13,7 @@ export default function HomePage() {
         <section className="relative w-full">
           <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
             <Image
-              src="/images/HKDTC2026.jpg"
+              src="/images/Imagine.jpg"
               alt="HKTDC Hong Kong International Jewellery Show 2026"
               fill
               className="object-cover"
@@ -36,14 +36,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. — Custom Jewellery Manufacturer in South Korea</h2>
+              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. </h2>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
                 earrings" for diamonds color stones.
                 <p> We work exclusively with high-quality gold materials. We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
 
-                Custom designs, sizes, and gold tones can be produced according to customer requests.</p>
-                
+                  Custom designs, sizes, and gold tones can be produced according to customer requests.</p>
+
               </Link>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function HomePage() {
 
                   Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision. </p>
                 <p>
-                  We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans. 
+                  We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.
                 </p>
 
 
