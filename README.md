@@ -26,16 +26,16 @@ https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMay
 
 
 AS-IS 대부분 사이트내용:
-👉 “회사 소개위주만 있음”
+
 👉 store page 모바일 미지원
 
 
 TO-BE: 반드시 들어가야 할 것
 1. 인증
-수출 국가
-거래 이력
-인증
+
+-거래 이력
+-인증
 2. 생산 capability
-월 생산량
-리드타임
-MOQ
+- 월 생산량
+- 리드타임
+- MOQ
