@@ -30,7 +30,7 @@ function BrandContent() {
     <div className="min-h-screen flex flex-col bg-[#ffffff]">
       <Header />
 
-      <main className="flex-1">
+      <main>
         {/* Sub-navigation */}
         <div className="bg-[#f5f5f5] border-b border-[#cfcfcf]">
           <div className="max-w-[1280px] mx-auto px-6 flex gap-6">
