@@ -5,7 +5,7 @@ import Footer from "@/components/footer"
 import BreadcrumbNav from "@/components/breadcrumb-nav"
 import Image from "next/image"
 import { useSearchParams } from "next/navigation"
-import { Suspense, useState } from "react"
+import { Suspense, useState, useEffect, useCallback } from "react"
 import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 
 const newsItems = [
@@ -13,7 +13,7 @@ const newsItems = [
   { id: 2, title: "10 million$ Export Tower ,2010", image: "/images/1ktop.jpg" },
   { id: 3, title: "30 million$ Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
   { id: 4, title: "Dubai Show 2026 Feb. ", image: "/images/dubai.jpeg" },
-  { id: 5, title: "Hongkong Jewellery Show 2026 March", image: "/images/hktdc.png" },
+  { id: 5, title: "Hongkong Jewellery Show 2026 March", image: "/images/HKDTC2026.jpg" },
   { id: 6, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/jewellery-gem-expo.png" },
 
 ]
@@ -37,11 +37,36 @@ function NewsContent() {
   const itemsPerPage = 6
   const totalPages = 5
 
-  // Paginated news items
+  // Paginated news items - must be defined before useEffect that references it
   const paginatedNews = newsItems.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   )
+
+  // Track loaded images for synchronized display
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set())
+  const [allImagesReady, setAllImagesReady] = useState(false)
+
+  // Reset loading state when page changes
+  useEffect(() => {
+    setLoadedImages(new Set())
+    setAllImagesReady(false)
+  }, [currentPage])
+
+  // Check if all current page images are loaded
+  useEffect(() => {
+    if (loadedImages.size === paginatedNews.length && paginatedNews.length > 0) {
+      setAllImagesReady(true)
+    }
+  }, [loadedImages, paginatedNews.length])
+
+  const handleImageLoad = useCallback((id: number) => {
+    setLoadedImages(prev => {
+      const newSet = new Set(prev)
+      newSet.add(id)
+      return newSet
+    })
+  }, [])
 
   const tabs = [
     { id: "news", label: "News" },
@@ -185,9 +210,16 @@ function NewsContent() {
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        className={`object-cover group-hover:scale-105 transition-all duration-300 ${
+                          allImagesReady ? "opacity-100" : "opacity-0"
+                        }`}
+                        onLoad={() => handleImageLoad(item.id)}
                         {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
                       />
+                      {/* Loading placeholder */}
+                      {!allImagesReady && (
+                        <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
+                      )}
                     </div>
                     <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
                       {item.title}
