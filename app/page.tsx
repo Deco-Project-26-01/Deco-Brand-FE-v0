@@ -48,7 +48,7 @@ export default function HomePage() {
           <div className="relative w-full">
             <Image
               src="/images/Nano2.png"
-              alt="HKTDC Hong Kong International Jewellery Show 2026"
+              alt="Logo"
               width={1920}
               height={1080}
               className="w-full h-auto object-contain"
@@ -60,8 +60,8 @@ export default function HomePage() {
         {/* Content Section 1 */}
         <section className="max-w-[1280px] mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row items-start gap-8">
-            <div className="w-full md:w-[200px] flex-shrink-0">
-              <div className="relative w-full h-[140px] overflow-hidden">
+            <div className="w-full md:w-[400px] flex-shrink-0">
+              <div className="relative w-full h-[280px] overflow-hidden">
                 <Image
                   src="/images/kora_pavilion2012.jpg"
                   alt="KORA pavilion at a jewelry trade show"
@@ -75,7 +75,8 @@ export default function HomePage() {
               <p className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 We are a manufacturer of the 10k,14k,18k mounting for &quot;tennis bracelets,necklace,
                 earrings&quot; for diamonds color stones.
-                <p> We work exclusively with high-quality gold materials. We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
+                <p> We work exclusively with high-quality gold materials. </p> 
+                <p>We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
 
                   Custom designs, sizes, and gold tones can be produced according to customer requests.</p>
 
@@ -106,8 +107,8 @@ export default function HomePage() {
                     </p>
                   </p>
                 </div>
-                <div className="w-full md:w-[240px] flex-shrink-0">
-                  <div className="relative w-full h-[160px] overflow-hidden">
+                <div className="w-full md:w-[300px] flex-shrink-0">
+                  <div className="relative w-full h-[500px] overflow-hidden">
                     <Image
                       src="/images/decoindcoltd_factory.JPG"
                       alt="ceo"

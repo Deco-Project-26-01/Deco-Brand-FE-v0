@@ -163,7 +163,7 @@ function AboutContent() {
                     We work exclusively with high-quality gold materials, including 10k gold, 14k gold, and 18k gold. All materials are carefully selected and sourced from trusted suppliers.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners for distribution.
+                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners .
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
                     We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.
