@@ -34,7 +34,7 @@ const navItems = [
       { label: "Notice", href: "/news?tab=notice" },
     ],
   },
-  { label: "Exhibition", href: "/exhibition", submenu: [] },
+  { label: "Exhibition", href: "/exhibition" },
 ]
 
 export default function Header() {
