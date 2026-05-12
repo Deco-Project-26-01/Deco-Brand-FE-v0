@@ -4,7 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import BreadcrumbNav from "@/components/breadcrumb-nav"
 import { useSearchParams } from "next/navigation"
-import { Suspense } from "react"
+import { Suspense, useState } from "react"
 import { ArrowUp } from "lucide-react"
 import Image from "next/image"
 
@@ -18,8 +18,23 @@ function AboutContent() {
     { id: "about us", label: "About us" },
     { id: "how we work", label: "How we work" },
     { id: "history", label: "History" },
+    { id: "certificates", label: "Certificates" },
     { id: "contact", label: "Contact" },
   ]
+
+  const certificateItems = [
+    { id: 1, title: "Certificate 1", image: "/images/conference.jpg" },
+    { id: 2, title: "Certificate 2", image: "/images/conference.jpg" },
+    { id: 3, title: "Certificate 3", image: "/images/conference.jpg" },
+  ]
+
+  const certificatesPerPage = 3
+  const [certPage, setCertPage] = useState(1)
+  const totalCertPages = Math.ceil(certificateItems.length / certificatesPerPage)
+  const paginatedCerts = certificateItems.slice(
+    (certPage - 1) * certificatesPerPage,
+    certPage * certificatesPerPage
+  )
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ffffff]">
@@ -59,7 +74,47 @@ function AboutContent() {
 
           {/* Content Area */}
           <div className="py-8">
-            {activeTab === "contact" ? (
+            {activeTab === "certificates" ? (
+              <>
+                {/* Certificates Grid - 3 items per row, same layout as /news */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+                  {paginatedCerts.map((item) => (
+                    <article key={item.id} className="group cursor-pointer">
+                      <div className="relative w-full h-[450px] overflow-hidden mb-3">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
+                        />
+                      </div>
+                      <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
+                        {item.title}
+                      </h3>
+                    </article>
+                  ))}
+                </div>
+
+                {/* Pagination */}
+                {totalCertPages > 1 && (
+                  <div className="flex items-center justify-center gap-2 pb-12">
+                    {Array.from({ length: totalCertPages }, (_, i) => i + 1).map((page) => (
+                      <button
+                        key={page}
+                        onClick={() => setCertPage(page)}
+                        className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${certPage === page
+                          ? "bg-[#004127] text-[#ffffff]"
+                          : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                          }`}
+                      >
+                        {page}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </>
+            ) : activeTab === "contact" ? (
               <div className="max-w-[600px] mx-auto">
                 <h2 className="text-xl font-semibold text-[#1a1a1a] mb-8">
                   Contact
