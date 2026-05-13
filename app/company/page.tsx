@@ -17,7 +17,7 @@ const certificateItems = [
 function AboutContent() {
   const searchParams = useSearchParams()
   // Normalize tab parameter: convert hyphens to spaces for matching
-  const rawTab = searchParams.get("tab") || "about us"
+  const rawTab = searchParams.get("tab") || "how we work"
   const activeTab = rawTab.replace(/-/g, " ")
 
   const [certPage, setCertPage] = useState(1)
@@ -52,7 +52,6 @@ function AboutContent() {
   }, [])
 
   const tabs = [
-    { id: "about us", label: "About us" },
     { id: "how we work", label: "How we work" },
     { id: "history", label: "History" },
     { id: "certificates", label: "Certificates" },
@@ -103,10 +102,10 @@ function AboutContent() {
                   Contact
                 </h2>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>WhatsApp: +82-10-2728-4255 <a href="" className="text-[#004127] underline"></a></li>
+                  <li>WhatsApp: +82-10-2728-4255</li>
                   <li>Business E-mail: </li>
                 </ul>
-                <br></br>
+                <br />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>Tel: </li>
                   <li>Sales: +82-2-747-0908</li>
@@ -129,31 +128,12 @@ function AboutContent() {
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
-                    allowFullScreen
+                    allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="rounded-lg"
                     title="DECO Industry Factory Location"
                   />
-                </div>
-              </div>
-            ) : activeTab === "about us" ? (
-              <div className="max-w-[700px] mx-auto space-y-8">
-                <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Nature of Business</h2>
-                  <p className="text-sm text-[#4f4f4f] leading-relaxed">Exporter, Manufacturer</p>
-                </div>
-                <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product / Service Range</h2>
-                  <p className="text-sm text-[#4f4f4f] leading-relaxed">Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery</p>
-                </div>
-                <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Exhibit / Brand / Service Description</h2>
-                  <p className="text-sm text-[#4f4f4f] leading-relaxed">18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.</p>
-                </div>
-                <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
-                  <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand ...</p>
                 </div>
               </div>
             ) : activeTab === "history" ? (
@@ -252,7 +232,7 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br></br> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
+                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br /> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
                   </p>
 
 
