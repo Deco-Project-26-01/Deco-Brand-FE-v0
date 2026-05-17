@@ -10,7 +10,7 @@ import Image from "next/image"
 
 const certificateItems = [
   { id: 1, title: "무역협회 회원증", image: "/images/conference.jpg" },
-  { id: 2, title: "수출실적", image: "/images/conference.jpg" },
+  { id: 2, title: "수출실적", image: "/images/MarkAny e-PageSAFER_2025.png" },
   { id: 3, title: "익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/conference.jpg" },
 ]
 
